@@ -1,0 +1,145 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KA Production</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="jumbotron">
+            <img class="imgB" src="assets/img/bannerbg.jpg" alt="banner jumbotron">
+            <h1 class="hx">KA Production</h1>
+            <p class="px">Make your business grow up</p>
+        </div>
+        <nav>            
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button onclick="servicesList()" class="dropbtn">Services +</button>
+                        <div id="myDropdown1" class="dropdown-content">
+                            <a href="#digitalmarketing">Digital Marketing</a>
+                            <a href="#seo">SEO</a>
+                            <a href="#wd">Web Development</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="content">
+            <article id="home" class="card">
+                <h2>Home</h2>
+                <img src="assets/img/home.jpg" class="featured-image" alt="home">
+                <p>Percayakan semua kebutuhan pemasaran kepda kami</p>
+            </article>
+            <article id="digitalmarketing" class="card">
+                <h2>Digital Marketing</h2>
+                <img src="assets/img/digitalmarketing.jpg" class="featured-image" alt="home">
+                <p>Hubungkan merek Anda melalui miliaran pengguna di berbagai saluran pemasaran internet yang efektif.
+                </p>
+            </article>
+            <article id="seo" class="card">
+                <h2>Search Engine Optimation</h2>
+                <img src="assets/img/seo0.jpg" class="featured-image" alt="home">
+                <p>Bangun kepercayaan dan kembangkan pendapatan Anda melalui optimasi mesin pencari dan kembangkan
+                    visibilitas situs Anda secara organik di mesin pencari populer.</p>
+            </article>
+            <article id="wd" class="card">
+                <h2>Web Development</h2>
+                <img src="assets/img/webdevelopment.jpg" class="featured-image" alt="home">
+                <p>Situs web Anda membentuk kesan pertama Anda pada pengunjung online Anda. Desain web yang sangat baik
+                    dapat sangat meningkatkan bisnis Anda.</p>
+            </article>
+            <article id="about" class="card">
+                <h2>KA Production</h2>
+                <img src="assets/img/logo.png" class="featured-images" alt="home">
+                <p>Kami adalah KA Production.
+                    Apa yang selanjutnya didefinisikan di sini. KA Production adalah agen pemasaran
+                    digital terkemuka di Indonesia. Kami berusaha untuk memberikan solusi pemasaran digital
+                    terintegrasi, yang berspesialisasi dalam memberikan solusi yang didorong oleh hasil untuk bisnis
+                    skala apa pun. Fokus tunggal utama kami adalah Anda, pelanggan kami.</p>
+                <p>
+                    Kami percaya dalam menciptakan hasil positif untuk meningkatkan merek Anda dan meningkatkan ROI
+                    pemasaran online Anda secara keseluruhan, baik melalui peningkatan visibilitas online, meningkatkan
+                    prospek, atau mendorong lebih banyak penjualan online.
+                </p>
+                <p>
+                    Kami adalah profesional bersertifikat Yahoo/Bing dengan lebih dari 7 tahun pengalaman dalam pemasaran pencarian berbayar. Digital Indonesia berikutnya sangat senang menyambut Anda dan mendengar tentang tujuan bisnis online Anda.
+                </p>
+            </article>
+        </div>
+        <aside>
+            <article class="profile card">
+                <header>
+                    <h2>Kacung Samsul Hadi</h2>
+                    <p>LinkedIn: kacungsamsulhadi</p>
+                    <figure>
+                        <img src="assets/img/avatar.jpeg" alt="mine">
+                        <figcaption>Samsul</figcaption>
+                    </figure>
+                </header>
+                <section>
+                    <h3>Biodata diri</h3>
+                    <table>
+                        <tr>
+                            <th>Nama</th>
+                            <td>Kacung Samsul Hadi</td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <th>Email</th>
+                            <td>samsul@gmail.com</td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <th>Hobi</th>
+                            <td>Tidur</td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <th>Cita - cita</th>
+                            <td>Ta</td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <th>Kebangsaan</th>
+                            <td>WNI</td>
+                        </tr>
+                    </table>
+                </section>
+            </article>
+        </aside>
+    </main>
+    <footer>
+        Submission Samsul KA Production &copy; 2022, Dicoding Academy
+    </footer>
+    <script>
+        function servicesList() {
+            document.getElementById("myDropdown1").classList.toggle("show");
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
